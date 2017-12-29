@@ -21,22 +21,5 @@ for tweet in public_tweets:
         curd_operations.insert_tweets([user_id, tweet_text, tweet_date])
     except:
         print("Error Uploading to database")
-
-
+        pass
     pass
-print("********************************************************************************")
-
-# import json
-# from database_connection import curd_operations
-# import requests
-# from pprint import pprint
-# def main():
-#     response = requests.get(
-#         "https://www.googleapis.com/books/v1/volumes?q=history")
-#     print(response)
-#     result = response.json()
-#     print(result['items'][5['volumeInfo'])
-#     print("----------------------------------")
-# curd_operations.insert_tweets()
-# if __name__ == '__main__':
-#     main()
